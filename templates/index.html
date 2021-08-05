@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Colorlib Templates">
+    <meta name="author" content="Colorlib">
+    <meta name="keywords" content="Colorlib Templates">
+
+    <!-- Title Page-->
+    <title>Financial Risk Management</title>
+
+    <!-- Icons font CSS-->
+    <link href="{{ url_for('static', filename='vendor/font-awesome-4.7/css/font-awesome.min.css') }}" rel="stylesheet"> 
+    <link href="{{ url_for('static', filename='vendor/mdi-font/css/material-design-iconic-font.min.css') }}" rel="stylesheet"> 
+    
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+
+    <!-- Vendor CSS-->
+    <link href="{{ url_for('static', filename='vendor/select2/select2.min.css') }}" rel="stylesheet"> 
+
+    <!-- Main CSS-->
+    <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet"> 
+</head>
+<style>
+.card-2 .card-heading {
+    background: url(../static/images/fin1.jpg) top left/cover no-repeat!important;
+}
+
+.bg-red {
+    background: #42d0fa8c!important;
+}
+</style>
+<body>
+    <div class="page-wrapper bg-red p-t-100 p-b-100 font-robo">
+        <div class="wrapper wrapper--w960">
+            <div class="card card-2">
+                <div class="card-heading"></div>
+                <div class="card-body">
+                    <h2 class="title">Financial Risk Assesment</h2>
+                    <form action="/risk" method="post">
+                        <div class="row row-space">
+                        <div class="col-2">
+		                        <div class="input-group">
+		                            <input class="input--style-2" type="text" placeholder="Age" name="age">
+		                        </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <div class="rs-select2 js-select-simple select--no-search">
+                                        <select name="gender">
+                                            <option disabled="disabled" selected="selected">Gender</option>
+                                            <option value="f">female</option>
+      										<option value="m">Male</option>
+                                        </select>
+                                        <div class="select-dropdown"></div>
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="col-2">
+		                        <div class="input-group">
+                                    <div class="rs-select2 js-select-simple select--no-search">
+                                        <select name="job">
+                                        	<option disabled="disabled" selected="selected">Choose employment type</option>
+                                            <option value="un">Unskilled / Non-Resident</option>
+      										<option value="ur">Unskilled / Resident</option>
+      										<option value="sk">Skilled</option>
+      										<option value="hs">highly Skilled</option>
+                                        </select>
+                                        <div class="select-dropdown"></div>
+                                    </div>
+		                        </div>
+                            </div>
+                        </div>
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <div class="rs-select2 js-select-simple select--no-search">
+                                        <select name="checking">
+                                            <option disabled="disabled" selected="selected">Checking Account</option>
+                                            <option value="lt">Little</option>
+										    <option value="mo">Moderate</option>
+										    <option value="ri">Rich</option>
+                                        </select>
+                                        <div class="select-dropdown"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <div class="rs-select2 js-select-simple select--no-search">
+                                        <select name="housing">
+                                            <option disabled="disabled" selected="selected">Housing</option>
+                                            <option value="own">Own</option>
+										    <option value="free">free</option>
+										    <option value="rent">Rent</option>
+                                        </select>
+                                        <div class="select-dropdown"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-space">
+                            <div class="col-2">
+		                        <div class="input-group">
+                                    <div class="rs-select2 js-select-simple select--no-search">
+                                        <select name="saving">
+                                            <option disabled="disabled" selected="selected">Savings Account</option>
+                                            <option value="l">Little</option>
+										    <option value="m">Moderate</option>
+										    <option value="qr">Quite rich</option>
+                                            <option value="r">Rich</option>
+                                        </select>
+                                        <div class="select-dropdown"></div>
+                                    </div>		                            
+		                        </div>
+                            </div>
+                            <div class="col-2">
+		                        <div class="input-group">
+		                            <div class="rs-select2 js-select-simple select--no-search">
+                                        <select name="purpose">
+                                            <option disabled="disabled" selected="selected">Purpose</option>
+                                            <option value="rtv">Radio / TV</option>
+										    <option value="edu">Education</option>
+										    <option value="fe">Furniture/Equipments</option>
+										    <option value="car">Car</option>
+										    <option value="bu">Business</option>
+										    <option value="da">Domestic Appliances</option>
+										    <option value="rep">Repairs</option>
+										    <option value="vo">Vacations/Others</option>
+                                        </select>
+                                        <div class="select-dropdown"></div>
+                                    </div>
+		                        </div>
+                            </div>
+                        </div>
+                        <div class="row row-space">
+                            <div class="col-2">
+		                        <div class="input-group">
+		                            <input class="input--style-2" type="text" placeholder="Credit Amount" name="credit">
+		                        </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+		                            <input class="input--style-2" type="text" placeholder="Duration" name="duration">
+		                        </div>
+                            </div>
+                        </div>                                                                                                
+                        <div class="p-t-30">
+                            <button class="btn btn--radius btn--green" type="submit">Submit</button>
+                        </div>
+                        <div class="row row-space">
+						<div class="p-t-30">
+                            <b>{{z}}</b>
+                        </div>
+						</div>
+
+
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Jquery JS-->
+    <script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js') }}" type="text/javascript"></script>
+    <!-- Vendor JS-->
+    <script src="{{ url_for('static', filename='vendor/select2/select2.min.js') }}" type="text/javascript"></script>
+    
+
+    <!-- Main JS-->
+    <script src="{{ url_for('static', filename='js/global.js') }}" type="text/javascript"></script>
+
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+
+</html>
+<!-- end document-->

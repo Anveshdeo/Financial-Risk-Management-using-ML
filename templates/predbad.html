@@ -1,0 +1,73 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Colorlib Templates">
+    <meta name="author" content="Colorlib">
+    <meta name="keywords" content="Colorlib Templates">
+
+    <!-- Title Page-->
+    <title>Financial Risk Management</title>
+
+    <!-- Icons font CSS-->
+    <link href="{{ url_for('static', filename='vendor/font-awesome-4.7/css/font-awesome.min.css') }}" rel="stylesheet"> 
+    <link href="{{ url_for('static', filename='vendor/mdi-font/css/material-design-iconic-font.min.css') }}" rel="stylesheet"> 
+    
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+
+    <!-- Vendor CSS-->
+    <link href="{{ url_for('static', filename='vendor/select2/select2.min.css') }}" rel="stylesheet"> 
+
+    <!-- Main CSS-->
+    <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet"> 
+</head>
+<style>
+.center {
+  margin: auto;
+  width: 70%;
+  padding: 10px;
+}
+.card-2 .card-heading {
+    background: url(../static/images/fin1.jpg) top left/cover no-repeat!important;
+    width: 35%!important;
+}
+
+.bg-red {
+    background: #42d0fa8c!important;
+}
+</style>
+<body>
+    <div class="page-wrapper bg-red p-t-100 p-b-100 font-robo">
+        <div class="wrapper wrapper--w960">
+            <div class="card card-2">
+                <div class="card-heading"></div>
+                <div class="card-body">
+                    <h2 class="title">Financial Risk Assesment</h2>
+                    <div class="center">
+                        <img src="../static/images/bad.jpg" width="300" height="300">
+                    </div>
+                    <h3 class="title"><p>The financial risk assesed is  <b><u>{{z}}</u></b></p> </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Jquery JS-->
+    <script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js') }}" type="text/javascript"></script>
+    <!-- Vendor JS-->
+    <script src="{{ url_for('static', filename='vendor/select2/select2.min.js') }}" type="text/javascript"></script>
+    
+
+    <!-- Main JS-->
+    <script src="{{ url_for('static', filename='js/global.js') }}" type="text/javascript"></script>
+
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+
+</html>
+<!-- end document-->
