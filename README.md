@@ -7,7 +7,7 @@ Financial institutions need to continually weigh the risks of their transactions
 Credit scoring is a statistical analysis performed by lenders and financial institutions to determine the creditworthiness of a person or a small, owner-operated business. Credit scoring is used by lenders to help decide whether to extend or deny credit.
 
 
-
+![credit-scores](https://user-images.githubusercontent.com/79392789/131216567-96fccdfb-de82-4491-bb9f-4ee185d817c8.jpg)
 
 
 
